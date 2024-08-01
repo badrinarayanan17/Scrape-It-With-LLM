@@ -1,0 +1,10 @@
+# scrapegraphai==0.9 # Web Scraping Library (Uses LLM)
+# playwright
+# nest_asyncio
+
+firecrawl-py
+pandas
+openpyxl
+py-dotenv
+groq
+
