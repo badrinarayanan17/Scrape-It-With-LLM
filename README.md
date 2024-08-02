@@ -10,7 +10,7 @@ This project demonstrates a universal web scraping agent that uses the Firecrawl
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
-- [Contributing](#contributing)
+- [Contributing](#contributions)
 - [Contact](#contact)
 
 ## Introduction
@@ -36,26 +36,26 @@ pip install -r requirements.txt
 
 1) Create a .env file in the project directory and add your API keys for Firecrawl and Groq.
 
-FIRECRAWL_API_KEY=your_firecrawl_api_key
-GROQ_API_KEY=your_groq_api_key
+   FIRECRAWL_API_KEY=your_firecrawl_api_key
+   GROQ_API_KEY=your_groq_api_key
 
 2) Run the script to scrape data from a specified URL and format it.
 
-python app.py
+   python app.py
 
 3) The raw and formatted data will be saved in the output folder.
 
 ## Project Structure
 
-Scrape-It-With-LLM/
-├── app.py
-├── requirements.txt
-├── .env
-├── output/
-│   ├── rawData_<timestamp>.md
-│   ├── sorted_data_<timestamp>.json
-│   ├── sorted_data_<timestamp>.xlsx
-└── README.md
+  Scrape-It-With-LLM/
+  ├── app.py
+  ├── requirements.txt
+  ├── .env
+  ├── output/
+  │   ├── rawData_<timestamp>.md
+  │   ├── sorted_data_<timestamp>.json
+  │   ├── sorted_data_<timestamp>.xlsx
+  └── README.md
 
 ## Requirements
 
@@ -65,7 +65,7 @@ openpyxl
 py-dotenv
 groq
 
-## Contributing
+## Contributions
 
 Contributions are welcome! Please open an issue or submit a pull request with your changes.
 
