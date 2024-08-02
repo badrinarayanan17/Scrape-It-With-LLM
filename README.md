@@ -50,6 +50,7 @@
 
 ## Project Structure
 
+
    Scrape-It-With-LLM/
    
    ├── main.py
@@ -70,15 +71,15 @@
    
 ## Requirements
 
-   firecrawl-py
+   1) firecrawl-py
    
-   pandas
+   2) pandas
    
-   openpyxl
+   3) openpyxl
    
-   py-dotenv
+   4) py-dotenv
    
-   groq
+   5) groq
 
 ## Contributions
 
