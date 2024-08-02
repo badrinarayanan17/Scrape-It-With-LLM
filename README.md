@@ -47,22 +47,33 @@ pip install -r requirements.txt
 
 ## Project Structure
 
-  Scrape-It-With-LLM/
-  ├── app.py
-  ├── requirements.txt
-  ├── .env
-  ├── output/
-  │   ├── rawData_<timestamp>.md
-  │   ├── sorted_data_<timestamp>.json
-  │   ├── sorted_data_<timestamp>.xlsx
-  └── README.md
-
+   Scrape-It-With-LLM/
+   ├── main.py
+   
+   ├── requirements.txt
+   
+   ├── .env
+   
+   ├── output/
+   
+   │ ├── rawData_<timestamp>.md
+   
+   │ ├── sorted_data_<timestamp>.json
+   
+   │ ├── sorted_data_<timestamp>.xlsx
+   
+   └── README.md
+   
 ## Requirements
 
 firecrawl-py
+
 pandas
+
 openpyxl
+
 py-dotenv
+
 groq
 
 ## Contributions
@@ -72,7 +83,9 @@ Contributions are welcome! Please open an issue or submit a pull request with yo
 ## Contact
 
 Name: BadriNarayanan S
+
 Email: badrisrp3836@gmail.com
+
 LinkedIn: [BadriNarayanan S](https://www.linkedin.com/in/badrinarayanan-s-43629522a/)
 
 
