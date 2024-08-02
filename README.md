@@ -2,7 +2,7 @@
 
    This project demonstrates a universal web scraping agent that uses the Firecrawl framework to scrape data from the web and utilizes a large language model (LLM) to format the data into a JSON response. This      project was demonstrated during a peer learning session to illustrate web scraping techniques and data extraction.
 
-## Table of Contents
+## Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
@@ -50,10 +50,11 @@
 
 ## Project Structure
 
-
+   <br>
+   
    Scrape-It-With-LLM/
    
-   ├── main.py
+   ├── app.py
    
    ├── requirements.txt
    
