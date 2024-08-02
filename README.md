@@ -1,8 +1,11 @@
 # Universal Web Scraping Agent using LLMs
+   <br>
 
    This project demonstrates a universal web scraping agent that uses the Firecrawl framework to scrape data from the web and utilizes a large language model (LLM) to format the data into a JSON response. This      project was demonstrated during a peer learning session to illustrate web scraping techniques and data extraction.
+   <br>
 
 ## Contents
+   <br>
 
 - [Introduction](#introduction)
 - [Features](#features)
@@ -13,18 +16,26 @@
 - [Contributions](#contributions)
 - [Contact](#contact)
 
+   <br>
 ## Introduction
-
-   The universal web scraping agent is designed to scrape data from any web page using the Firecrawl framework and format the scraped data using a large language model (LLM) provided by Groq. The output is a        JSON object containing the structured data extracted from the web page.
-
+   <br>
+   The universal web scraping agent is designed to scrape data from any web page using the Firecrawl framework and format the scraped data using a large language model (LLM) provided by Groq. The output is a JSON object containing the structured data extracted from the web page.
+   
+   <br>
 ## Features
+
+   <br>
 
    Scrapes data from any web page using the Firecrawl framework.
    Formats the scraped data into a structured JSON object using Groq's LLM. 
    Saves the raw scraped data in markdown format.
    Saves the formatted data in both JSON and Excel formats.
 
+   <br>
+   
 ## Installation
+
+   <br>
 
    To get started with this project, clone the repository and install the required dependencies.
    
@@ -34,7 +45,11 @@
    
    3) pip install -r requirements.txt
 
+   <br>
+
 ## Usage
+
+   <br>
 
    1) Create a .env file in the project directory and add your API keys for Firecrawl and Groq.
    
@@ -47,6 +62,8 @@
       python app.py
    
    3) The raw and formatted data will be saved in the output folder.
+
+   <br>
 
 ## Project Structure
 
@@ -69,9 +86,13 @@
    │ ├── sorted_data_<timestamp>.xlsx
    
    └── README.md
+
+   <br>
    
 ## Requirements
 
+   <br>
+   
    1) firecrawl-py
    
    2) pandas
@@ -82,12 +103,20 @@
    
    5) groq
 
+   <br>
+
 ## Contributions
+
+   <br>
 
    Contributions are welcome! Please open an issue or submit a pull request with your changes.
 
+   <br>
+   
 ## Contact
 
+   <br>
+   
    Name: BadriNarayanan S
    
    Email: badrisrp3836@gmail.com
