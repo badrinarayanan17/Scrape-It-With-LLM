@@ -1,10 +1,14 @@
-# scrapegraphai==0.9 # Web Scraping Library (Uses LLM)
-# playwright
-# nest_asyncio
-
 firecrawl-py
 pandas
 openpyxl
 py-dotenv
 groq
+
+
+# ScrapegraphAI Dependencies
+
+# scrapegraphai==0.9 
+# playwright
+# nest_asyncio
+
 

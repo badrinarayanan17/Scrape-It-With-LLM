@@ -1,15 +1,16 @@
-# Developing a universal web scraping agent 
+# Developing a universal web scraping agent using llm 
+
+# Loading the necessary libraries
 
 import os # For Detecting Env
 from dotenv import load_dotenv
-# from langchain_groq import ChatGroq
 from groq import Groq
 from firecrawl import FirecrawlApp # Provides llm ready data
 import json # Response Format 
-import pandas as pd
-from datetime import datetime # For getting real time data
+import pandas as pd # For dataframe
+from datetime import datetime # For getting the real time data
 
-# This is the Function to scrape the data
+# This Function is used to scrape the data using firecrawl framework 
 
 def scrapedata(url):
     load_dotenv()
@@ -20,7 +21,7 @@ def scrapedata(url):
     else:
         raise KeyError("Mardown Not Found")
     
-# This is the Function to save the raw data
+# This Function is used to save the raw data in a markdown format
 
 def savedata(rawdata,timestamp,output_folder = 'output'):
     os.makedirs(output_folder,exist_ok=True)
@@ -30,7 +31,7 @@ def savedata(rawdata,timestamp,output_folder = 'output'):
         f.write(rawdata)
     print(f"Raw Data saved to {rawpath}")
     
-# This function holds the llm model, mainly defining response format
+# Holds the llm model, assigning the system and user prompts and a response format in JSON
 
 def formatdata(data):
     load_dotenv()
@@ -75,9 +76,9 @@ def formatdata(data):
         
         return parsed_json
     else:
-        raise ValueError("The OpenAI API response did not contain the expected choices data.")
+        raise ValueError("Data not found")
     
-# This function is for saving the formatted data
+# Saving the formated data
 
 def save_formatted_data(formatted_data, timestamp, output_folder='output'):
        
@@ -100,13 +101,15 @@ def save_formatted_data(formatted_data, timestamp, output_folder='output'):
     excel_output_path = os.path.join(output_folder, f'sorted_data_{timestamp}.xlsx')
     df.to_excel(excel_output_path, index=False)
     print(f"Formatted data saved to Excel at {excel_output_path}")
+    
+# Specifying the URL and calling all the function to do the expected work
 
 if __name__ == "__main__":
-        # Scrape a single URL
+        
         url = 'https://christuniversity.in/departments/main%20campus/school%20of%20sciences/computer%20science/Festivals'
         
         try:
-            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S') # For realtime data
             
             raw_data = scrapedata(url)
             
