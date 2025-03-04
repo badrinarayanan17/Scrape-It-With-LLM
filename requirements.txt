@@ -3,6 +3,7 @@ pandas
 openpyxl
 py-dotenv
 groq
+psaw
 
 
 # ScrapegraphAI Dependencies
